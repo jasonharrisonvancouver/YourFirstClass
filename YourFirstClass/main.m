@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BNRPerson.h"
+#import "Maid.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        BNRPerson *person = [[BNRPerson alloc] init];
+
+        Maid *maid = [[Maid alloc] init];
         
-        person.eyeColor = @"blue";
+        [maid setCleaningBill:500];
         
-        NSLog(@"eye color is %@", [person eyeColor]);
+        NSLog(@"bill is %i", [maid cleaningBill]);
+        
     }
     return 0;
 }

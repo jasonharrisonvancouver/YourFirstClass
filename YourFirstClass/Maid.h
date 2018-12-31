@@ -1,5 +1,5 @@
 //
-//  BNRPerson.h
+//  Maid.h
 //  YourFirstClass
 //
 //  Created by jason harrison on 2018-12-31.
@@ -10,11 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BNRPerson : NSObject
+@interface Maid : NSObject
+{
+    int _cleaningBill;
+}
 
-
-    @property NSString *eyeColor;
-
+- (void)setCleaningBill:(int)cleaningBill;
+- (int)cleaningBill;
 @end
 
 NS_ASSUME_NONNULL_END
