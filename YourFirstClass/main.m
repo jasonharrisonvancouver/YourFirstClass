@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRPerson.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        BNRPerson *person = [[BNRPerson alloc] init];
+        
+        person.eyeColor = @"blue";
+        
+        NSLog(@"eye color is %@", [person eyeColor]);
     }
     return 0;
 }
